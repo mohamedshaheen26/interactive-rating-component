@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --main-color: hsl(25, 97%, 53%);
+  --main-bg: hsl(213, 19%, 18%);
+  --body-background: hsl(216, 12%, 8%);
+  --main-prargraph: hsl(217, 12%, 63%);
+  --main-para: hsl(216, 12%, 54%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background: var(--body-background);
+}
+
+/* Rating state start */
+
+.card {
+  background: var(--main-bg);
+  width: 360px;
+  margin: 100px auto;
+  padding: 23px;
+  border-radius: 20px;
+  color: white;
+}
+
+.card .star {
+  background: hsl(213deg 21% 21%);
+  border-radius: 50%;
+  padding: 10px;
+  width: 40px;
+}
+
+.card h3 {
+  color: hsl(0, 0%, 100%);
+  margin: 20px 0 10px;
+}
+
+.card p {
+  color: var(--main-prargraph);
+  font-size: 14px;
+}
+
+.card .rating {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .rating span {
+  background: hsl(213deg 21% 21%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 13px;
+  color: var(--main-para);
+  cursor: pointer;
+}
+
+.card .rating span.acrive {
+  color: white;
+  background: var(--main-prargraph);
+}
+
+.card .rating span:hover {
+  background: var(--main-color);
+  color: white;
+}
+
+.card button {
+  background: var(--main-color);
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: white;
+  color: var(--main-color);
+}
+
+/* Rating state End */
+
+/* Thank you state start */
+.state {
+  background: var(--main-bg);
+  width: 360px;
+  margin: 100px auto;
+  padding: 23px;
+  border-radius: 20px;
+  color: white;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.state img {
+  width: 120px;
+}
+
+.state span {
+  margin: 20px 0;
+  font-size: 12px;
+  padding: 6px 15px;
+  border-radius: 20px;
+  color: var(--main-color);
+  background: hsl(213deg 21% 21%);
+}
+
+.state p {
+  margin: 10px 0;
+  color: var(--main-prargraph);
+  text-align: center;
+  font-size: 14px;
+}
+
+.state .rateAgain {
+  background: var(--main-color);
+  color: white;
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.state .rateAgain:hover {
+    background: white;
+    color: var(--main-color);
+  }
