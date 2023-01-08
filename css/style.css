@@ -17,6 +17,12 @@
 body {
   font-family: "Overpass", sans-serif;
   background: var(--body-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Rating state start */
@@ -24,7 +30,6 @@ body {
 .card {
   background: var(--main-bg);
   width: 360px;
-  margin: 100px auto;
   padding: 23px;
   border-radius: 20px;
   color: white;
@@ -37,9 +42,10 @@ body {
   width: 40px;
 }
 
-.card h3 {
+.card h1 {
   color: hsl(0, 0%, 100%);
   margin: 20px 0 10px;
+  font-size: 25px;
 }
 
 .card p {
@@ -101,7 +107,6 @@ body {
 .state {
   background: var(--main-bg);
   width: 360px;
-  margin: 100px auto;
   padding: 23px;
   border-radius: 20px;
   color: white;
@@ -144,6 +149,6 @@ body {
 }
 
 .state .rateAgain:hover {
-    background: white;
-    color: var(--main-color);
-  }
+  background: white;
+  color: var(--main-color);
+}
